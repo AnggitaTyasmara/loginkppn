@@ -10,6 +10,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['nip'])) {
 	<title>Ganti Password</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
+<style>
+	body {
+		background-image: url('img/background_login.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		height: 80%;
+	}
+</style>
 <body>
     <div class="container d-flex justify-content-center align-items-center"style="min-height: 100vh">
         <form class="border shadow p-3 rounded" action="php/change_pass.php" method="post" style="width: 450px;">
@@ -42,8 +52,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['nip'])) {
      	        placeholder="Konfirmasi Password Baru">
      	        <br>
         </div>
-        <button type="submit" class="btn btn-success">GANTI</button>
-          <a href="home.php" class="ca">HOME</a>
+        <button type="submit" class="btn btn-warning">GANTI</button>
+        <a href="home.php" class="btn btn-success">HOME</a>
      </form>
     </div>
 </body>

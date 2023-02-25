@@ -22,7 +22,9 @@
 			    <h5 class="card-title">
 			    	<?=$_SESSION['name']?>
 			    </h5>
-			    <a href="logout.php" class="btn btn-dark">Logout</a>
+			    <a href="logout.php" class="btn btn-danger">Logout</a>
+			    <a href="tambah.php" class="btn btn-primary">Tambah</a>
+				
 			  </div>
 			</div>
 			<div class="p-3">
@@ -35,8 +37,8 @@
 				  <thead>
 				    <tr>
 				      <th scope="col">#</th>
-				      <th scope="col">Name</th>
-				      <th scope="col">User name</th>
+				      <th scope="col">Nama</th>
+				      <th scope="col">NIP</th>
 				      <th scope="col">Role</th>
 				    </tr>
 				  </thead>
@@ -46,8 +48,8 @@
 				  	while ($rows = mysqli_fetch_assoc($res)) {?>
 				    <tr>
 				      <th scope="row"><?=$i?></th>
-				      <td><?=$rows['name']?></td>
-				      <td><?=$rows['username']?></td>
+				      <td><?=$rows['nama']?></td>
+				      <td><?=$rows['nip']?></td>
 				      <td><?=$rows['role']?></td>
 				    </tr>
 				    <?php $i++; }?>
